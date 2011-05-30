@@ -8,11 +8,12 @@
 //changing to delegate.....
 //http://jsfiddle.net/adardesign/8uUMH/
 (function ($) {
-   $.fn.hoverTip = function (options) {
+   $.fn.infoTip = function (options) {
         var defaults = {
             defualtClassName:"hoverTipCont",
             hasTooltip: false,
             createToolTip: function (data, relClass, e) {
+	        var data = data+="<div class='linkHelper'></div>";
                 options.hasTooltip = true;
                 if (!$("." + options.defualtClassName).length) {
                     return $("<div>").addClass(options.defualtClassName + " " + relClass).appendTo("body").html(function(){
