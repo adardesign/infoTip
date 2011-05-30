@@ -7,25 +7,28 @@
 </head>
 <body>
 <header>
-	<nav>
-		<ul>
-			<li>Your menu</li>
-		</ul>
-	</nav>
+	<h1>jQuery infoTip plugin</h1>
 </header>
 <section>
-	<span class="hoverTip" title="tooltip content here">Will trigger tooltip</span>
+<h2>See ut in action</h2>
+	<span class="hoverTip" title="tooltip content here">Hover hover me! this will trigger the tooltip</span>
 </section>
 <aside>
 	<h2>Options</h2>
-	<p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	<ul>
+		<li><pre>defualtClassName</pre>The defualt class name the info tip will have besides the class it gets from the <pre>rel</pre> attribute</li>
+		<li><pre>createToolTip</pre> The function that creates the tooltip</li>
+		<li><pre>postiotionTip</pre>The function that creates the postiotions the tooltip</li>
+		<li><pre>fadeOut</pre>The function that fades out the tooltip</li>
+		<li><pre>stopAll</pre>The function that stops this and all other tooltips</li>
+	</ul>
 </aside>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/infoTip.js"></script>
 <script type="text/javascript">
 $(function(){
-	$(".hoverTip").hoverTip();
+	$(".hoverTip").infoTip();
 })
 </script>
 </body>
