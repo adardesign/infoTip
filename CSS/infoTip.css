@@ -1,0 +1,22 @@
+.hoverTip:after { content:url("http://ebraun.adorama.com/pix/globalStructures/Tooltip/infoTip.png"); margin:0 7px 0 2px; position:relative; top:1px; }
+.hoverTip { cursor:help; }
+.hoverTipCont { font-size:12px; line-height:15px; position: absolute; z-index: 999; max-width: 300px; padding: 15px 20px; opacity:0; filter:alpha(opacity=0); -moz-border-radius: 5px; border-radius: 5px; -webkit-border-radius: 5px; border: 2px solid #ccc; color: #555; background: #fff; background: -moz-linear-gradient(top, #ffffff 0%, #F7F7F7 100%); -moz-box-shadow: 0 0 15px -5px #444; -webkit-box-shadow: 0 0 15px -5px #444; text-decoration:none!important; font-family:Arial, Helvetica, sans-serif; line-height:15px; }
+.linkHelper { position:absolute; top:-30px; left:0; height:30px; width:300px; }
+.hoverTipCont:before { border-color: transparent transparent #CCCCCC; border-style: solid; border-width: 0 12px 10px; content: " "; display: block; height: 0; position: absolute; left: 30px; top: -11px; width: 0; }
+.hoverTipCont:after { border-color: transparent transparent #FFFFFF; border-style: solid; border-width: 0 11px 10px; content: " "; display: block; height: 0; position: absolute; left: 31px; top: -9px; width: 0; }
+.hoverTipCont.tipTop { background: #ffffff; background: -moz-linear-gradient(top, #F7F7F7 0%, #ffffff 100%); }
+.hoverTipCont.tipTop:before { top: auto; bottom: -12px; border-width: 12px 10px 0; border-color: #CCCCCC transparent transparent; }
+.hoverTipCont.tipTop:after { top: auto; bottom: -11px; border-width: 11px 9px 0; border-color: #fff transparent transparent; }
+.hoverTipCont.tipRight:before { left:auto; right:19px; }
+.hoverTipCont.tipRight:after { left:auto; right:20px; }
+.hoverTipCont.tipRight .linkHelper { left:auto; right:0; }
+.tipTop .linkHelper { top:auto; bottom:-40px; height:42px; }
+.hoverTipCont a, .hoverTipCont a:visited { color:#069; }
+
+/*Specifics*/
+.tipTop.taxTooltip .linkHelper { width:180px;}
+
+
+/*IE7-8 bug*/
+.hoverTips { margin-top/*\**/: -18px\9; }
+.hoverTips.tipTop { margin-top/*\**/: 18px\9; }
